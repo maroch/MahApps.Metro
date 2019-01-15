@@ -180,6 +180,13 @@
                                                       Header="Price"
                                                       Minimum="0"
                                                       StringFormat="{}{0:C}" />
+                <DataGridTemplateColumn Header="Przycisk">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button >Zapisz</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
             <DataGrid.Style>
                 <Style BasedOn="{StaticResource MetroDataGrid}" TargetType="{x:Type DataGrid}">
